@@ -1,0 +1,27 @@
+.download{
+    background-color: rgba(61,67,81,.8);
+    text-align: center;
+    padding: 120px 0;
+    position: relative;
+    h2{
+        color: white;
+        margin-bottom: 1rem;
+        sup{
+            color: #f69d52;
+            font-size: 1.2rem;
+        }
+    }
+    p{
+        color: #acb1b4;
+        margin-bottom: 2.5rem;
+
+    }
+}
+
+.sketch-logo{
+    position: absolute;
+    bottom: -6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 10rem;
+}

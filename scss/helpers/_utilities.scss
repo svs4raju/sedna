@@ -1,0 +1,17 @@
+.container{
+    max-width: 1060px;
+    margin: auto;
+    @include responsive(1090px){
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+}
+
+.scrolloff{
+    overflow-y: hidden;
+}

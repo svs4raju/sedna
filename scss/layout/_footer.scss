@@ -1,0 +1,83 @@
+footer {
+  background-image: linear-gradient(
+    to right,
+    #3d4351 0,
+    #3d4351 60%,
+    #373d4a 60%,
+    #373d4a 100%
+  );
+}
+
+.footer__head {
+  background-color: #3d4351;
+  overflow: hidden;
+}
+
+.footer__top-btn {
+  float: right;
+  color: white;
+  background-color: #373d4a;
+  padding: 1rem;
+}
+
+.footer__body {
+  @extend %tbpadding;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__nav > p,
+.footer__nav > a,
+.footer__social_links > a,
+.footer__social_links > p {
+  color: white;
+  line-height: 1.25rem;
+}
+
+.footer__nav {
+  border-top: 2px solid rgba(255, 255, 255, 0.4);
+  padding-top: 1.5rem;
+  font-size: 0;
+  width: 60%;
+  > a {
+    font-size: 0.7rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    @include responsive(930px) {
+      margin-left: 1.5rem;
+    }
+    @include responsive(500px) {
+      display: block;
+    }
+    + a {
+      margin-left: 1.5rem;
+    }
+    &:hover {
+      color: #ff5274;
+    }
+  }
+  > p {
+    @include responsive(930px) {
+      margin-left: 1.5rem;
+    }
+  }
+}
+
+.footer__social_links {
+  width: 33%;
+  > a {
+    font-size: 1rem;
+    display: inline-block;
+    border-radius: 1rem;
+    transition: 0.4s;
+    margin: 1rem;
+  }
+}
+
+.tw:hover {
+  color: rgb(9, 208, 243);
+}
+
+.fb:hover {
+  color: rgb(10, 10, 117);
+}

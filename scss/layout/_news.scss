@@ -1,0 +1,14 @@
+.news ul {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.news__list-item {
+  h6 {
+    margin: 1.5rem 0 2rem;
+  }
+  a {
+    font-size: 0.7rem;
+  }
+}

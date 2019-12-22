@@ -1,0 +1,39 @@
+.btn{
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    transition: 0.3s;
+
+    &_head-normal{
+        background: none;
+        color: white;
+    }
+    &_head-primary{
+        background: none;
+        border: 1px solid white;
+        color: white;
+        padding: 0.4rem 1.5rem;
+    }
+
+    &-primary{
+        background-color: #ff5274;
+        color: white;
+        padding: 1rem;
+        border: 2px solid #ff5274;
+        &:hover{
+            color: #ff5274;         
+            background: none;
+        }
+    }
+    &-secondary{
+        border: 2px solid #ff5274;
+        background: none;
+        color: #ff5274;
+        padding: 1rem;
+        &:hover{
+            background-color: #ff5274;
+            color: white;
+        }
+    }
+}

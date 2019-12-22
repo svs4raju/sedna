@@ -1,0 +1,59 @@
+$pcolor: #373d4a;
+
+html {
+  font-size: 20px;
+  font-family: "OpenSans SemiBold", Helvetica, Arial;
+  scroll-behavior: smooth;
+  @include responsive(1090px) {
+    font-size: 18px;
+  }
+  @include responsive(500px) {
+    font-size: 14px;
+  }
+  @include responsive(375px) {
+    font-size: 12px;
+  }
+
+  @include responsive(320px) {
+    font-size: 10px;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  @include responsive(320px) {
+    font-size: 1.6rem;
+  }
+  .assets & {
+    color: #3d4351;
+  }
+}
+
+h6 {
+  font-size: 0.6rem;
+  @include responsive(320px) {
+    font-size: 0.9rem;
+  }
+}
+
+a {
+  @include responsive(320px) {
+    font-size: 1.4rem;
+  }
+}
+
+p {
+  font-size: 0.8rem;
+  color: rgba(28, 54, 83, 0.7);
+  @include responsive(320px) {
+    font-size: 1.1rem;
+  }
+}

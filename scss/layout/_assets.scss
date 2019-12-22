@@ -1,0 +1,68 @@
+.assets {
+  background-color: #f7f8fa;
+  position: relative;
+  height: 40rem;
+  overflow: hidden;
+  @extend %tbpadding;
+  @include responsive(768px) {
+    height: 30rem;
+  }
+}
+
+.assets__banners {
+  position: absolute;
+  left: 0;
+  > img {
+    max-width: 27rem;
+    @include responsive(768px) {
+      max-width: 20rem;
+    }
+    @include responsive(500px) {
+      display: none;
+    }
+  }
+
+  figure {
+    display: inline-block;
+    margin-left: -223px;
+    margin-bottom: 100px;
+    vertical-align: bottom;
+    @include responsive(500px) {
+      margin-left: 1rem;
+    }
+    img {
+      max-width: 16rem;
+      @include responsive(768px) {
+        display: none;
+      }
+      @include responsive(500px) {
+        display: block;
+        max-width: 10rem;
+      }
+    }
+  }
+}
+
+.assets__content {
+  width: 40%;
+  float: right;
+  > h4 {
+    margin-bottom: 1rem;
+  }
+  @include responsive(500px) {
+    width: 60%;
+  }
+}
+
+.assets__content_list {
+  margin-top: 3rem;
+  > li {
+    > h4 {
+      margin-bottom: 0.5rem;
+    }
+    > p {
+      max-width: 275px;
+      margin-bottom: 1rem;
+    }
+  }
+}

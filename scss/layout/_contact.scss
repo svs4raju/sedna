@@ -1,0 +1,50 @@
+.contact {
+  text-align: center;
+  padding: 6rem 0;
+  font-size: 0.6rem;
+  .container > p {
+    margin: 1rem;
+  }
+}
+
+.contact__mail,
+.contact__pswrd {
+  border: 1px solid #e6e9ea;
+  text-align: left;
+  padding: 1rem;
+  margin: 0.5rem auto;
+  border-radius: 10px;
+  width: 40%;
+
+  label {
+    border-right: 1px solid #e6e9ea;
+    padding-right: 1rem;
+    color: #ff5274;
+  }
+  input {
+    border: none;
+    outline-style: none;
+  }
+  @include responsive(768px) {
+    width: 60%;
+  }
+}
+
+input[type="submit"] {
+  width: 40%;
+  margin: 0 auto;
+  color: white;
+  background-color: #ff5274;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ff5274;
+  transition: 0.4s;
+  &:hover {
+    background: none;
+    color: #ff5274;
+  }
+  @include responsive(768px) {
+    width: 60%;
+  }
+}

@@ -1,0 +1,26 @@
+.features {
+  @extend %tbpadding;
+
+  > .container {
+    @include flex($justifyc: space-between, $aligni: flex-start);
+    flex-wrap: wrap;
+    @include responsive(1090px) {
+      @include flex($justifyc: space-evenly);
+    }
+  }
+}
+.features__list-item {
+  max-width: 17rem;
+  > h4 {
+    margin-bottom: 0.5rem;
+  }
+  > p {
+    text-align: justify;
+    max-height: 10rem;
+    overflow: auto;
+    max-width: 100%;
+  }
+  @include responsive(1090px) {
+    margin: 0 1rem 1rem;
+  }
+}

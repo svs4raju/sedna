@@ -1,0 +1,38 @@
+.blog {
+  @extend %tbpadding;
+  position: relative;
+}
+
+.blog__content {
+  width: 50%;
+  line-height: 25px;
+  h3 {
+    margin-bottom: 1.5rem;
+  }
+
+  > p {
+    text-align: justify;
+    + p {
+      margin-top: 1.5rem;
+    }
+  }
+  > .btn {
+    margin-top: 3rem;
+  }
+}
+
+.blog__banners {
+  position: absolute;
+  right: 0;
+  top: 120px;
+  max-width: 26rem;
+  > img {
+    max-width: 23rem;
+    @include responsive(768px) {
+      max-width: 20rem;
+    }
+    @include responsive(500px) {
+      max-width: 14rem;
+    }
+  }
+}
